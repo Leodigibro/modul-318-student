@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace MeineTransportApp
 {
-    public partial class Karte : Form
+    public partial class VerbindungenVonNach : Form
     {
-        public Karte()
+        public VerbindungenVonNach()
         {
             InitializeComponent();
         }
 
-        private void btnZurueckKarte_Click(object sender, EventArgs e)
+        private void VerbindungenVonNach_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnZurueckVerbindungenVonNach_Click(object sender, EventArgs e)
         {
             StartSeite Startfenster = new StartSeite();
             Startfenster.Show();

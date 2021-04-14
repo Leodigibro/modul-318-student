@@ -18,16 +18,22 @@ namespace MeineTransportApp
         }
         private void btnVerbSuE_Click_1(object sender, EventArgs e)
         {
-            Verbindungen verbindungsfenster = new Verbindungen();
-            verbindungsfenster.Show();
+            VerbindungenVonNach verbindungsfensterVonNach = new VerbindungenVonNach();
+            verbindungsfensterVonNach.Show();
 
             this.Hide();
         }
-
         private void btnKarte_Click(object sender, EventArgs e)
         {
             Karte kartenfenster = new Karte();
             kartenfenster.Show();
+
+            this.Hide();
+        }
+        private void btnVerbES_Click(object sender, EventArgs e)
+        {
+            Verbindungen1Station Verbindungsfenster1Station = new Verbindungen1Station();
+            Verbindungsfenster1Station.Show();
 
             this.Hide();
         }

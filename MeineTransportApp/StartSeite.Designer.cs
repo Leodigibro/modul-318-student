@@ -29,74 +29,91 @@ namespace MeineTransportApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVerbSuE = new System.Windows.Forms.Button();
-            this.btnVerbES = new System.Windows.Forms.Button();
             this.btnKarte = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnVerbES = new System.Windows.Forms.Button();
+            this.btnVerbSuE = new System.Windows.Forms.Button();
+            this.pBice = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pBice)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnVerbSuE
-            // 
-            this.btnVerbSuE.Location = new System.Drawing.Point(12, 253);
-            this.btnVerbSuE.Name = "btnVerbSuE";
-            this.btnVerbSuE.Size = new System.Drawing.Size(193, 104);
-            this.btnVerbSuE.TabIndex = 1;
-            this.btnVerbSuE.Text = "Verbindungen zwischen Start- und Endstation";
-            this.btnVerbSuE.UseVisualStyleBackColor = true;
-            this.btnVerbSuE.Click += new System.EventHandler(this.btnVerbSuE_Click_1);
-            // 
-            // btnVerbES
-            // 
-            this.btnVerbES.Location = new System.Drawing.Point(900, 253);
-            this.btnVerbES.Name = "btnVerbES";
-            this.btnVerbES.Size = new System.Drawing.Size(193, 104);
-            this.btnVerbES.TabIndex = 3;
-            this.btnVerbES.Text = "Verbindungen von einer Station aus";
-            this.btnVerbES.UseVisualStyleBackColor = true;
             // 
             // btnKarte
             // 
-            this.btnKarte.Location = new System.Drawing.Point(464, 253);
+            this.btnKarte.BackgroundImage = global::MeineTransportApp.Properties.Resources.Karte;
+            this.btnKarte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKarte.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKarte.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKarte.ForeColor = System.Drawing.Color.Blue;
+            this.btnKarte.Location = new System.Drawing.Point(576, 297);
             this.btnKarte.Name = "btnKarte";
-            this.btnKarte.Size = new System.Drawing.Size(193, 104);
+            this.btnKarte.Size = new System.Drawing.Size(257, 142);
             this.btnKarte.TabIndex = 4;
-            this.btnKarte.Text = "Stationen auf der Karte sehen";
+            this.btnKarte.Text = "Karte";
             this.btnKarte.UseVisualStyleBackColor = true;
             this.btnKarte.Click += new System.EventHandler(this.btnKarte_Click);
             // 
-            // pictureBox1
+            // btnVerbES
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::MeineTransportApp.Properties.Resources.ice;
-            this.pictureBox1.Location = new System.Drawing.Point(1, -4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1106, 640);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.btnVerbES.BackgroundImage = global::MeineTransportApp.Properties.Resources.EineStation5;
+            this.btnVerbES.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnVerbES.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnVerbES.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerbES.ForeColor = System.Drawing.Color.Blue;
+            this.btnVerbES.Location = new System.Drawing.Point(1057, 297);
+            this.btnVerbES.Name = "btnVerbES";
+            this.btnVerbES.Size = new System.Drawing.Size(257, 142);
+            this.btnVerbES.TabIndex = 3;
+            this.btnVerbES.Text = "Verbindungen von einer Station aus";
+            this.btnVerbES.UseVisualStyleBackColor = true;
+            this.btnVerbES.Click += new System.EventHandler(this.btnVerbES_Click);
+            // 
+            // btnVerbSuE
+            // 
+            this.btnVerbSuE.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btnVerbSuE.BackgroundImage = global::MeineTransportApp.Properties.Resources.StartEnde1;
+            this.btnVerbSuE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnVerbSuE.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerbSuE.ForeColor = System.Drawing.Color.Blue;
+            this.btnVerbSuE.Location = new System.Drawing.Point(62, 297);
+            this.btnVerbSuE.Name = "btnVerbSuE";
+            this.btnVerbSuE.Size = new System.Drawing.Size(257, 142);
+            this.btnVerbSuE.TabIndex = 1;
+            this.btnVerbSuE.Text = "Verbindungen zwischen Start- und Endstation";
+            this.btnVerbSuE.UseVisualStyleBackColor = false;
+            this.btnVerbSuE.Click += new System.EventHandler(this.btnVerbSuE_Click_1);
+            // 
+            // pBice
+            // 
+            this.pBice.BackColor = System.Drawing.SystemColors.Control;
+            this.pBice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pBice.Image = global::MeineTransportApp.Properties.Resources.ice;
+            this.pBice.Location = new System.Drawing.Point(1, -4);
+            this.pBice.Name = "pBice";
+            this.pBice.Size = new System.Drawing.Size(1393, 768);
+            this.pBice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pBice.TabIndex = 2;
+            this.pBice.TabStop = false;
             // 
             // StartSeite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1105, 635);
+            this.ClientSize = new System.Drawing.Size(1379, 738);
             this.Controls.Add(this.btnKarte);
             this.Controls.Add(this.btnVerbES);
             this.Controls.Add(this.btnVerbSuE);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pBice);
             this.Name = "StartSeite";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Text = "StartSeite";
+            ((System.ComponentModel.ISupportInitialize)(this.pBice)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Button btnVerbSuE;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnVerbES;
         private System.Windows.Forms.Button btnKarte;
+        private System.Windows.Forms.PictureBox pBice;
     }
 }
 
