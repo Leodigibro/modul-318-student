@@ -53,8 +53,8 @@ namespace MeineTransportApp
             // 
             // btnVerbES
             // 
-            this.btnVerbES.BackgroundImage = global::MeineTransportApp.Properties.Resources.EineStation5;
-            this.btnVerbES.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnVerbES.BackgroundImage = global::MeineTransportApp.Properties.Resources.EineStation11;
+            this.btnVerbES.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVerbES.Cursor = System.Windows.Forms.Cursors.Default;
             this.btnVerbES.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerbES.ForeColor = System.Drawing.Color.Blue;

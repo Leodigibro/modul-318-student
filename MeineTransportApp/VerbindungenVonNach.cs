@@ -15,11 +15,7 @@ namespace MeineTransportApp
         public VerbindungenVonNach()
         {
             InitializeComponent();
-        }
-
-        private void VerbindungenVonNach_Load(object sender, EventArgs e)
-        {
-
+            txtUhrzeit.Text = DateTime.Now.ToString("HH.mm");
         }
 
         private void btnZurueckVerbindungenVonNach_Click(object sender, EventArgs e)
@@ -28,6 +24,20 @@ namespace MeineTransportApp
             Startfenster.Show();
 
             this.Hide();
+        }
+
+        private void btnSuchen_Click(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtUhrzeit.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Nur Zahlen möglich.");
+                txtUhrzeit.Text = txtUhrzeit.Text.Remove(txtUhrzeit.Text.Length - 1);
+            }
+        }
+
+        private void txtUhrzeit_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

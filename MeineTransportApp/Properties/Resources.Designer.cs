@@ -83,6 +83,16 @@ namespace MeineTransportApp.Properties {
         /// <summary>
         ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap EineStation11 {
+            get {
+                object obj = ResourceManager.GetObject("EineStation11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap EineStation2 {
             get {
                 object obj = ResourceManager.GetObject("EineStation2", resourceCulture);
@@ -116,6 +126,26 @@ namespace MeineTransportApp.Properties {
         internal static System.Drawing.Bitmap EineStation5 {
             get {
                 object obj = ResourceManager.GetObject("EineStation5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EineStation6 {
+            get {
+                object obj = ResourceManager.GetObject("EineStation6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EineStation7 {
+            get {
+                object obj = ResourceManager.GetObject("EineStation7", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
