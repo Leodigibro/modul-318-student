@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SwissTransport.Core;
 
 namespace MeineTransportApp
 {
@@ -17,7 +18,6 @@ namespace MeineTransportApp
             InitializeComponent();
             txtUhrzeit.Text = DateTime.Now.ToString("HH.mm");
         }
-
         private void btnZurueckVerbindungenVonNach_Click(object sender, EventArgs e)
         {
             StartSeite Startfenster = new StartSeite();
@@ -25,19 +25,26 @@ namespace MeineTransportApp
 
             this.Hide();
         }
-
         private void btnSuchen_Click(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(txtUhrzeit.Text, "[^0-9]"))
+            ITransport transport = new Transport();
+            LVTabelle.Items.Clear();
+            foreach(SwissTransport.Models.Connection temp in transport.GetConnections(CBVon.Text, CBNach.Text).ConnectionList)
             {
-                MessageBox.Show("Nur Zahlen möglich.");
-                txtUhrzeit.Text = txtUhrzeit.Text.Remove(txtUhrzeit.Text.Length - 1);
+                LVTabelle.Items.Add(Zeile(temp));
             }
         }
-
-        private void txtUhrzeit_TextChanged(object sender, EventArgs e)
+        private ListViewItem Zeile(SwissTransport.Models.Connection STrans)
         {
-
+            string[] datenarray =
+            {
+                STrans.From.Station.Name,
+                STrans.From.Departure.ToString().Substring(0,16),
+                STrans.To.Station.Name,
+                STrans.To.Arrival.ToString().Substring(0,16),
+                STrans.From.Platform
+            };
+            return new ListViewItem(datenarray);
         }
     }
 }
