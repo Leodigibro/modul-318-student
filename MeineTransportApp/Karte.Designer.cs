@@ -41,7 +41,7 @@ namespace MeineTransportApp
             this.btnZurueckKarte.Location = new System.Drawing.Point(306, 22);
             this.btnZurueckKarte.Name = "btnZurueckKarte";
             this.btnZurueckKarte.Size = new System.Drawing.Size(75, 23);
-            this.btnZurueckKarte.TabIndex = 0;
+            this.btnZurueckKarte.TabIndex = 3;
             this.btnZurueckKarte.Text = "Zurück";
             this.btnZurueckKarte.UseVisualStyleBackColor = true;
             this.btnZurueckKarte.Click += new System.EventHandler(this.btnZurueckKarte_Click);
@@ -51,7 +51,7 @@ namespace MeineTransportApp
             this.btnSuchen.Location = new System.Drawing.Point(54, 132);
             this.btnSuchen.Name = "btnSuchen";
             this.btnSuchen.Size = new System.Drawing.Size(327, 23);
-            this.btnSuchen.TabIndex = 3;
+            this.btnSuchen.TabIndex = 2;
             this.btnSuchen.Text = "Suchen";
             this.btnSuchen.UseVisualStyleBackColor = true;
             this.btnSuchen.Click += new System.EventHandler(this.btnSuchen_Click);
@@ -71,7 +71,7 @@ namespace MeineTransportApp
             this.lOrt.AutoSize = true;
             this.lOrt.Location = new System.Drawing.Point(51, 80);
             this.lOrt.Name = "lOrt";
-            this.lOrt.Size = new System.Drawing.Size(311, 21);
+            this.lOrt.Size = new System.Drawing.Size(249, 17);
             this.lOrt.TabIndex = 14;
             this.lOrt.Text = "Geben Sie Ihren gewünschten Ort ein:";
             // 
@@ -80,7 +80,7 @@ namespace MeineTransportApp
             this.txtStation.Location = new System.Drawing.Point(54, 104);
             this.txtStation.Name = "txtStation";
             this.txtStation.Size = new System.Drawing.Size(327, 22);
-            this.txtStation.TabIndex = 15;
+            this.txtStation.TabIndex = 1;
             // 
             // Karte
             // 

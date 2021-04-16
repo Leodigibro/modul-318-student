@@ -45,7 +45,7 @@ namespace MeineTransportApp
             this.CBStation.Location = new System.Drawing.Point(46, 117);
             this.CBStation.Name = "CBStation";
             this.CBStation.Size = new System.Drawing.Size(505, 24);
-            this.CBStation.TabIndex = 0;
+            this.CBStation.TabIndex = 1;
             this.CBStation.TextUpdate += new System.EventHandler(this.CBVon_TextUpdate);
             // 
             // btnZurueckVerbindungen1Station
@@ -53,7 +53,7 @@ namespace MeineTransportApp
             this.btnZurueckVerbindungen1Station.Location = new System.Drawing.Point(621, 12);
             this.btnZurueckVerbindungen1Station.Name = "btnZurueckVerbindungen1Station";
             this.btnZurueckVerbindungen1Station.Size = new System.Drawing.Size(75, 23);
-            this.btnZurueckVerbindungen1Station.TabIndex = 1;
+            this.btnZurueckVerbindungen1Station.TabIndex = 4;
             this.btnZurueckVerbindungen1Station.Text = "Zurück";
             this.btnZurueckVerbindungen1Station.UseVisualStyleBackColor = true;
             this.btnZurueckVerbindungen1Station.Click += new System.EventHandler(this.btnZurueckVerbindungen1Station_Click);
@@ -72,7 +72,7 @@ namespace MeineTransportApp
             this.btnSuchen.Location = new System.Drawing.Point(557, 117);
             this.btnSuchen.Name = "btnSuchen";
             this.btnSuchen.Size = new System.Drawing.Size(139, 24);
-            this.btnSuchen.TabIndex = 3;
+            this.btnSuchen.TabIndex = 2;
             this.btnSuchen.Text = "Suchen";
             this.btnSuchen.UseVisualStyleBackColor = true;
             this.btnSuchen.Click += new System.EventHandler(this.btnSuchen_Click_1);
@@ -86,7 +86,7 @@ namespace MeineTransportApp
             this.LVAbfahrt.Location = new System.Drawing.Point(46, 147);
             this.LVAbfahrt.Name = "LVAbfahrt";
             this.LVAbfahrt.Size = new System.Drawing.Size(650, 205);
-            this.LVAbfahrt.TabIndex = 4;
+            this.LVAbfahrt.TabIndex = 3;
             this.LVAbfahrt.UseCompatibleStateImageBehavior = false;
             this.LVAbfahrt.View = System.Windows.Forms.View.Details;
             // 
