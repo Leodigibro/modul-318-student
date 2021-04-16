@@ -33,10 +33,10 @@ namespace MeineTransportApp
             this.btnKarte = new System.Windows.Forms.Button();
             this.btnVerbES = new System.Windows.Forms.Button();
             this.btnVerbSuE = new System.Windows.Forms.Button();
-            this.pBice = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lOEVSchweiz = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pBice)).BeginInit();
+            this.PCice = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PCice)).BeginInit();
             this.SuspendLayout();
             // 
             // btnKarte
@@ -86,19 +86,6 @@ namespace MeineTransportApp
             this.btnVerbSuE.UseVisualStyleBackColor = false;
             this.btnVerbSuE.Click += new System.EventHandler(this.btnVerbSuE_Click_1);
             // 
-            // pBice
-            // 
-            this.pBice.BackColor = System.Drawing.SystemColors.Control;
-            this.pBice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pBice.Image = global::MeineTransportApp.Properties.Resources.ice;
-            this.pBice.Location = new System.Drawing.Point(1, -4);
-            this.pBice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pBice.Name = "pBice";
-            this.pBice.Size = new System.Drawing.Size(1393, 768);
-            this.pBice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pBice.TabIndex = 2;
-            this.pBice.TabStop = false;
-            // 
             // lOEVSchweiz
             // 
             this.lOEVSchweiz.AutoSize = true;
@@ -111,6 +98,16 @@ namespace MeineTransportApp
             this.lOEVSchweiz.TabIndex = 1;
             this.lOEVSchweiz.Text = "ÖV Schweiz";
             // 
+            // PCice
+            // 
+            this.PCice.BackgroundImage = global::MeineTransportApp.Properties.Resources.ice;
+            this.PCice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PCice.Location = new System.Drawing.Point(-1, -3);
+            this.PCice.Name = "PCice";
+            this.PCice.Size = new System.Drawing.Size(1381, 742);
+            this.PCice.TabIndex = 5;
+            this.PCice.TabStop = false;
+            // 
             // StartSeite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -120,11 +117,11 @@ namespace MeineTransportApp
             this.Controls.Add(this.btnKarte);
             this.Controls.Add(this.btnVerbES);
             this.Controls.Add(this.btnVerbSuE);
-            this.Controls.Add(this.pBice);
+            this.Controls.Add(this.PCice);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "StartSeite";
             this.Text = "StartSeite";
-            ((System.ComponentModel.ISupportInitialize)(this.pBice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PCice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,9 +131,9 @@ namespace MeineTransportApp
         private System.Windows.Forms.Button btnVerbSuE;
         private System.Windows.Forms.Button btnVerbES;
         private System.Windows.Forms.Button btnKarte;
-        private System.Windows.Forms.PictureBox pBice;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lOEVSchweiz;
+        private System.Windows.Forms.PictureBox PCice;
     }
 }
 

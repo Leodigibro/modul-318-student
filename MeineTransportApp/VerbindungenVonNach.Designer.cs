@@ -55,6 +55,7 @@ namespace MeineTransportApp
             this.CBNach.Name = "CBNach";
             this.CBNach.Size = new System.Drawing.Size(253, 24);
             this.CBNach.TabIndex = 2;
+            this.CBNach.TextUpdate += new System.EventHandler(this.CBNach_TextUpdate);
             // 
             // CBVon
             // 
@@ -63,6 +64,7 @@ namespace MeineTransportApp
             this.CBVon.Name = "CBVon";
             this.CBVon.Size = new System.Drawing.Size(253, 24);
             this.CBVon.TabIndex = 1;
+            this.CBVon.TextUpdate += new System.EventHandler(this.CBVon_TextUpdate);
             // 
             // btnSuchen
             // 

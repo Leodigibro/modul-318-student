@@ -33,10 +33,10 @@ namespace MeineTransportApp
             this.btnZurueckVerbindungen1Station = new System.Windows.Forms.Button();
             this.lStation = new System.Windows.Forms.Label();
             this.btnSuchen = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Abfahrtszeit = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.LVAbfahrt = new System.Windows.Forms.ListView();
             this.Nach = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Abfahrtszeit = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CBStation
@@ -46,6 +46,7 @@ namespace MeineTransportApp
             this.CBStation.Name = "CBStation";
             this.CBStation.Size = new System.Drawing.Size(505, 24);
             this.CBStation.TabIndex = 0;
+            this.CBStation.TextUpdate += new System.EventHandler(this.CBVon_TextUpdate);
             // 
             // btnZurueckVerbindungen1Station
             // 
@@ -74,20 +75,30 @@ namespace MeineTransportApp
             this.btnSuchen.TabIndex = 3;
             this.btnSuchen.Text = "Suchen";
             this.btnSuchen.UseVisualStyleBackColor = true;
-            this.btnSuchen.Click += new System.EventHandler(this.btnSuchen_Click);
+            this.btnSuchen.Click += new System.EventHandler(this.btnSuchen_Click_1);
             // 
-            // listView1
+            // LVAbfahrt
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.LVAbfahrt.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Nach,
             this.Abfahrtszeit});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(46, 147);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(650, 205);
-            this.listView1.TabIndex = 4;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.LVAbfahrt.HideSelection = false;
+            this.LVAbfahrt.Location = new System.Drawing.Point(46, 147);
+            this.LVAbfahrt.Name = "LVAbfahrt";
+            this.LVAbfahrt.Size = new System.Drawing.Size(650, 205);
+            this.LVAbfahrt.TabIndex = 4;
+            this.LVAbfahrt.UseCompatibleStateImageBehavior = false;
+            this.LVAbfahrt.View = System.Windows.Forms.View.Details;
+            // 
+            // Nach
+            // 
+            this.Nach.Text = "Nach";
+            this.Nach.Width = 150;
+            // 
+            // Abfahrtszeit
+            // 
+            this.Abfahrtszeit.Text = "Abfahrtszeit";
+            this.Abfahrtszeit.Width = 250;
             // 
             // label1
             // 
@@ -99,21 +110,13 @@ namespace MeineTransportApp
             this.label1.TabIndex = 12;
             this.label1.Text = "Verbindungen von einer Station aus";
             // 
-            // Abfahrtszeit
-            // 
-            this.Abfahrtszeit.Text = "Abfahrtszeit";
-            // 
-            // Nach
-            // 
-            this.Nach.Text = "Nach";
-            // 
             // Verbindungen1Station
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 395);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.LVAbfahrt);
             this.Controls.Add(this.btnSuchen);
             this.Controls.Add(this.lStation);
             this.Controls.Add(this.btnZurueckVerbindungen1Station);
@@ -131,7 +134,7 @@ namespace MeineTransportApp
         private System.Windows.Forms.Button btnZurueckVerbindungen1Station;
         private System.Windows.Forms.Label lStation;
         private System.Windows.Forms.Button btnSuchen;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView LVAbfahrt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ColumnHeader Abfahrtszeit;
         private System.Windows.Forms.ColumnHeader Nach;

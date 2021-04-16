@@ -24,5 +24,10 @@ namespace MeineTransportApp
 
             this.Hide();
         }
+        private void btnSuchen_Click(object sender, EventArgs e)
+        {
+            string stadt = txtStation.Text;
+            System.Diagnostics.Process.Start("https://duckduckgo.com/?q=" + stadt + "&ia=web&iaxm=maps");
+        }
     }
 }

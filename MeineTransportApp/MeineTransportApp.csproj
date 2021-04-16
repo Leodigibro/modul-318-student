@@ -111,46 +111,19 @@
     <None Include="Resources\ice.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Karte.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\StartEnde.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\StartEnde1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EineStation.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EineStation1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EineStation2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EineStation3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EineStation4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EineStation.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EineStation5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EineStation6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EineStation11.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\src\SwissTransport\SwissTransport.csproj">
       <Project>{d0262178-a48f-4de0-807b-e76b63e39421}</Project>
       <Name>SwissTransport</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ice3.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
